@@ -48,7 +48,7 @@ npm -v
 git --version
 
 ```
-If missing, download Node.js (which includes npm) from nodejs.org
+If missing, download Node.js (which includes npm) from [nodejs.org](https://nodejs.org) 
 
 ⚙️ Setup
 
