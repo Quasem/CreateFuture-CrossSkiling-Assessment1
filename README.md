@@ -149,11 +149,9 @@ A CI workflow is included in:
 
 This workflow runs automatically on every push or pull request to the main branch and will:
 
-. Install dependencies and Playwright browsers
-
-. Execute the test suite in headless mode
-
-. Upload the Playwright report as a downloadable artifact
++ - Install dependencies and Playwright browsers
++ - Execute the test suite in headless mode
++ - Upload the Playwright report as a downloadable artifact
 
 You can view all runs under the Actions tab in your GitHub repository.
 
