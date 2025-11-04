@@ -55,8 +55,9 @@ If missing, download Node.js (which includes npm) from [nodejs.org](https://node
 Clone the repository:
 ```bash
 
-git clone https://github.com/<your-username>/assessment-1.git
-cd assessment-1
+git clone https://github.com/Quasem/CreateFuture-CrossSkilling-Assessment1.git
+cd CreateFuture-CrossSkilling-Assessment1
+
 
 ```
 
