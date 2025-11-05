@@ -11,23 +11,13 @@ test('YouTube — open "You" page and verify Sign in page is displayed', async (
   // Click on the "You" link
   await page.getByRole('link', { name: 'You', exact: true }).click();
 
+  // ✅ ASSERTION: Confirm we are on the You page by checking the URL
+  await expect(page).toHaveURL(/youtube\.com\/feed\/you/);
 
-  // 4) ASSERTION: The “Enjoy your favourite videos” text is visible on the You page
-  await page.getByText('Enjoy your favourite videos');
-
-
+  // Click "Sign in"
   await page.locator('#page-manager').getByRole('link', { name: 'Sign in' }).click();
 
-  // ✅ FINAL ASSERTIONS: verify sign-in page is shown
-  // 1) URL changes to Google/YouTube sign-in
+  // ✅ ASSERTION: Verify the sign in page is displayed
   await page.waitForURL(/(accounts\.google\.com|youtube\.com\/signin)/, { timeout: 15000 });
-
-  // 2) Unique element on sign-in page: "Email or phone" input
   await expect(page.getByLabel(/email|phone|email or phone/i)).toBeVisible();
-
-
-
 });
-
-
-  
