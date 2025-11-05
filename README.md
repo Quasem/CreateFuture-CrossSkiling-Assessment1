@@ -79,7 +79,7 @@ npx playwright install
 
 🧭 Usage
 
-This project contains a single functional test that demonstrates:
+This project contains three separate test executions (one per browser) Chromium,Firefox and Webkit, that demonstrates:
 
 Navigating to YouTube
 

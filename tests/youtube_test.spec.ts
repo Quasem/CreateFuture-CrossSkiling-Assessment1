@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('YouTube — open "You" page and verify Sign in page is displayed', async ({ page }) => {
 
   // Go to https://www.youtube.com/
   await page.goto('https://www.youtube.com/');
@@ -12,7 +12,7 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'You', exact: true }).click();
 
 
-  // Expect to see "Enjoy your favourite videos"
+  // 4) ASSERTION: The “Enjoy your favourite videos” text is visible on the You page
   await page.getByText('Enjoy your favourite videos');
 
 
