@@ -6,7 +6,8 @@ test('YouTube — open "You" page and verify Sign in page is displayed', async (
   await page.goto('https://www.youtube.com/');
 
   await page.getByRole('dialog', { name: 'Before you continue to YouTube' }).click();
-  await page.getByRole('button', { name: 'Accept the use of cookies and' }).click();
+  await page.getByRole('button', { name: /accept.*cookies/i }).click();
+  //await page.getByRole('button', { name: 'Accept the use of cookies and' }).click();
 
   // Click on the "You" link
   await page.getByRole('link', { name: 'You', exact: true }).click();
@@ -20,4 +21,5 @@ test('YouTube — open "You" page and verify Sign in page is displayed', async (
   // ✅ ASSERTION: Verify the sign in page is displayed
   await page.waitForURL(/(accounts\.google\.com|youtube\.com\/signin)/, { timeout: 15000 });
   await expect(page.getByLabel(/email|phone|email or phone/i)).toBeVisible();
+
 });

@@ -18,7 +18,7 @@ This repository demonstrates my ability to build, structure, and execute UI auto
 
 ---
 
-## 🎯 Motivation
+## Motivation
 
 As part of the **Quality Engineering Assessment 1**, this project showcases my foundational automation skills.  
 The goal was to design and run a small automated **Playwright** test while applying **Git best practices** — including clean branching, incremental commits, and project documentation.
@@ -28,9 +28,9 @@ The YouTube site provides a stable, real-world interface for testing navigation,
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### 🔧 Prerequisites
+###  Prerequisites
 
 This repository has been verified to work with:
 
@@ -50,7 +50,7 @@ git --version
 ```
 If missing, download Node.js (which includes npm) from [nodejs.org](https://nodejs.org) 
 
-## ⚙️ Setup
+##  Setup
 
 Clone the repository:
 ```bash
@@ -77,7 +77,7 @@ npx playwright install
 
 
 
-🧭 Usage
+## Usage
 
 This project contains three separate test executions (one per browser) Chromium,Firefox and Webkit, that demonstrates:
 
@@ -93,7 +93,8 @@ Verifying key text or elements along the way
 
 Test File: tests/youtube_test.spec.ts
 
-🧪 Running Tests
+## Running Tests
+
 Headless Mode
 ```
 npx playwright test
@@ -121,7 +122,7 @@ Reports are automatically generated in the playwright-report/ folder.
 
 
 
-✅ Expected Behaviour
+## Expected Behaviour
 
 The test should:
 
@@ -138,7 +139,7 @@ The test should:
 If any of these fail, Playwright’s built-in report and trace viewer will display a step-by-step breakdown for debugging.
 
 
-⚙️ GitHub Actions
+## GitHub Actions
 
 A CI workflow is included in:
 .github/workflows/playwright.yml
@@ -146,7 +147,7 @@ A CI workflow is included in:
 
 
  
-🧩 Workflow Summary
+## Workflow Summary
 
 This workflow runs automatically on every push or pull request to the main branch and will:
 
@@ -159,7 +160,7 @@ You can view all runs under the Actions tab in your GitHub repository.
 
 
 
-🏁 Summary
+## Summary
 
 This repository demonstrates:
 
